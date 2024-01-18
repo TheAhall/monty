@@ -4,7 +4,8 @@
  *add_dnodeint_end - add a note at the end of the doubly link list
  *@head: first position of linked list
  *@n: data to store
- *Return: a doubly linked list
+ *
+ *Return: doubly linked list
  */
 stack_t *add_dnodeint_end(stack_t **head, const int n)
 {

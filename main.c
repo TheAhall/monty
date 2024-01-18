@@ -16,8 +16,8 @@ void free_vglo(void)
 
 /**
  * start_vglo - initializes the global variables
- *
  * @fd: file descriptor
+ *
  * Return: no return
  */
 void start_vglo(FILE *fd)
@@ -31,11 +31,10 @@ void start_vglo(FILE *fd)
 }
 
 /**
- * check_input - checks if the file exists and if the file can
- * be opened
- *
+ * check_input - checks if the file exists and if the file can be open
  * @argc: argument count
  * @argv: argument vector
+ *
  * Return: file struct
  */
 FILE *check_input(int argc, char *argv[])
@@ -61,9 +60,9 @@ FILE *check_input(int argc, char *argv[])
 
 /**
  * main - Entry point
- *
  * @argc: argument count
  * @argv: argument vector
+ *
  * Return: 0 on success
  */
 int main(int argc, char *argv[])
