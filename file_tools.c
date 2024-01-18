@@ -120,6 +120,7 @@ int parse_line(char *buffer, int line_number, int format)
 	return (format);
 }
 
+
 /**
  * open_file - opens a file
  * @file_name: the file namepath
@@ -136,9 +137,9 @@ void read_file(FILE *fd)
 {
 	int line_number, format = 0;
 	char *buffer = NULL;
-	size_t len = 0;
+	/*size_t len = 0;*/
 
-	for (line_number = 1; getline(&buffer, &len, fd) != -1; line_number++)
+	for (line_number = 1; fgets(buffer, sizeof(buffer), fd) != NULL; line_number++)
 	{
 		format = parse_line(buffer, line_number, format);
 	}
